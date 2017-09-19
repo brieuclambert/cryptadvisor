@@ -20,7 +20,7 @@ else
 end
 
 symbols.each do |symbol|
-  uri = URI("https://min-api.cryptocompare.com/data/histohour?fsym=#{symbol}&tsym=EUR&limit=2000&aggregate=1&e=Kraken")
+  uri = URI("https://min-api.cryptocompare.com/data/histohour?fsym=#{symbol}&tsym=EUR&limit=#{limit}&aggregate=1&e=Kraken")
   req = Net::HTTP::Get.new(uri)
   http = Net::HTTP.start(uri.hostname, uri.port, use_ssl: true)
   resp = http.request(req)
