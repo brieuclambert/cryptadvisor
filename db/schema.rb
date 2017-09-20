@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170916170836) do
+ActiveRecord::Schema.define(version: 20170920001214) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -43,6 +43,10 @@ ActiveRecord::Schema.define(version: 20170916170836) do
     t.float "volumeto"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.float "ema_7"
+    t.float "ema_15"
+    t.float "ema_30"
+    t.float "ema_50"
   end
 
 end
