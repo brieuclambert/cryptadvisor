@@ -1,5 +1,8 @@
 class ValuesController < ApplicationController
 
+  def index
+    @values = Value.all
+  end
 
   def self.count_all
     puts Value.all.count
@@ -20,6 +23,12 @@ class ValuesController < ApplicationController
 
       value.save
 
+    end
+
+    def self.kraken
+      client = KrakenClient.load
+      time = client.public.server_time
+      p time
     end
   end
 
