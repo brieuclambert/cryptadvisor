@@ -9,6 +9,10 @@ gem 'puma'
 gem 'rails', '5.1.1'
 gem 'redis'
 gem "chartkick"
+gem 'groupdate'
+gem 'kraken_client', '1.1.4 '
+gem 'kraken_ruby', '0.4.2'
+
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass'
