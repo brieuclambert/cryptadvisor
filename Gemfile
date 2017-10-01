@@ -10,8 +10,14 @@ gem 'rails', '5.1.1'
 gem 'redis'
 gem "chartkick"
 gem 'groupdate'
-gem 'kraken_client', '1.1.4 '
+gem 'kraken_client', '1.2.1 '
 gem 'kraken_ruby', '0.4.2'
+gem 'poloniex'
+gem 'bittrex'
+gem 'bitfinex-rb'
+gem 'hitbtc'
+gem 'okcoin-ruby', '~> 0.0.6'
+gem 'celluloid-websocket-client',  :github => 'ilyacherevkov/celluloid-websocket-client'
 
 
 gem 'autoprefixer-rails'
